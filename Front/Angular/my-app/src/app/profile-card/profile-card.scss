@@ -1,0 +1,91 @@
+:host {
+  display: block;
+}
+
+.container {
+  max-width: 480px;
+  margin: 48px auto;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: system-ui, sans-serif;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  color: #172b4d;
+}
+
+.subtitle {
+  margin: 4px 0 24px;
+  font-size: 15px;
+  color: #6b778c;
+}
+
+.job {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #172b4d;
+}
+
+.disponibility {
+  margin: 0;
+}
+
+.available {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #e3fcef;
+  color: #006644;
+  font-size: 14px;
+  font-weight: 500;
+
+  &::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #36b37e;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #0079bf;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    transform 0.1s;
+
+  &:hover {
+    background: #026aa7;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #0079bf;
+    outline-offset: 2px;
+  }
+}

@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="profile">
+    <h1 class="title">{{ title() }}</h1>
+    <p class="subtitle">{{ subtitle() }}</p>
+
+    <p class="job">{{ job() }}</p>
+
+    <p class="disponibility">
+      <span class="available">{{ disponibility() }}</span>
+    </p>
+  </div>
+
+  <div class="actions">
+    <button class="btn" (click)="incrementalLikes()">Likes: {{ likes() }}</button>
+    <button class="btn" (click)="seeBio()">See Bio</button>
+  </div>
+
+  @if (bioVisible()) {
+    <div class="bio">
+      <p>{{ bio() }}</p>
+    </div>
+  }
+</div>
